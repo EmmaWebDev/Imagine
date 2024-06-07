@@ -108,6 +108,27 @@ Math.max(12, 14, 89)
 1 * 2 + 3 -4 / 2 % 2**2;
 //handling user inputs
 1200 + Number('250');
+
+// String Concatenation
+const firstname = 'Emmanuella';
+const lastname = 'Amonoo';
+firstname.trim() + ' ' + lastname.trim();
+
+// Temple Literal
+`${firstname.trim()}  $(lastname.trim()}`;
+
+// String Methods
+
+firstname.length;
+lastname.length;
+`${firstname.trim()} ${lastname.trim()}`.length;
+(firstname.trim() + ' ' + lastname.trim()).length;
+fistname.toUpperCase();
+lastname.charAt(0);
+`${firstname.trim().charAt(0)} ${lastname.trim().charAt(0)};`
+
+// String conversation
+String(2014);
     
     
     
