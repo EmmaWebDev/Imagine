@@ -158,8 +158,46 @@ alphabets;
 alphabets.join(' ');
 alphabets.join('  ').split(' ');
 
+// Array methods in javascript
+// Write a fuction that will take a user with first name and last name and return fullname;
 
+const user = {
+  firstname: 'Emma',
+  lastname: 'Amonoo',
+}
 
+function fullname(user) {
+return {
+  ...user,
+  fullname:`${user.firstname} ${user.lastname}`
+ }
+}
+
+fullname(user);
+         
+         
+//Array Map
+const users = [
+  {firstname: 'Linda', lastname: 'Parker'},
+  {firstname: 'Mark', lastname: 'Twaine'},
+  {firstname: 'Oliver', lastname: 'Queen'},
+  {firstname: 'Stephan', lastname: 'Grider'},
+  {firstname: 'Elon', lastname: 'Musk'}
+]
+users.map('fullname')
+// map and return  squares of numbers
+function square(number)  {
+return number  ** 2;
+
+}
+const numbers = [0, 1, 2, 3, 4, 5]
+numbers.map(square);
+
+//filter and return even numbers
+function even(number) {
+  return number % 2 === 0;
+}
+numbers.filter(even);
     
     
     
