@@ -1,8 +1,8 @@
 const myButton = document.getElementById('btn');
-myButton.onclick = function() {
-const name = prompt('Enter your full name');
-document.getElementById('name').innerText = name;
-document.getElementById('name').style.backgroundColor = 'red';
+myButton.onclick = function () {
+  const name = prompt('Enter your full name');
+  document.getElementById('name').innerText = name;
+  document.getElementById('name').style.backgroundColor = 'red';
 }
 // variables
 const pi = 3.142;
@@ -12,18 +12,18 @@ let present = false;
 console.log(name);
 // object
 const car = {
-    numberPlate: 'GR-345-24',
-    model: 'Bentley',
-    color: 'pink',
-    weight: '60',
-    weightunit: 'KG',
-    owner: {
-        name: 'Emmanuella Amonoo',
-        driver: {
-            name: 'Fifi',
-        }
-
+  numberPlate: 'GR-345-24',
+  model: 'Bentley',
+  color: 'pink',
+  weight: '60',
+  weightunit: 'KG',
+  owner: {
+    name: 'Emmanuella Amonoo',
+    driver: {
+      name: 'Fifi',
     }
+
+  }
 }
 console.log(car.numberPlate);
 console.log(car.owner.driver.name);
@@ -35,55 +35,55 @@ console.log(car.owner.driver.name);
 
 //Arrays
 const tweet1 = {
-    text: 'I am learning js today',
-    likes: 5,
-    shares: 2,
-    retweets: 1
-    
-    }
-    const tweet2 = {
-    text: 'I am learning js today',
-    likes: 8,
-    shares: 3,
-    retweets: 0
-    
-    }
-    const tweets = [];
-    tweets.push(tweet1);
-    tweets.push(tweet2);
-    tweets.length;
-    tweets;
-    
-    //Dates
-    const today = new Date(); 
-    today.toString();
-    today.toLocaleDateString();
-    
-    //If/Else
-    
-    if (today.getHours() == 16){
-      console.log('class has ended!');
-    
-    } else {
-      console.log('class is in session!');
-    }
-    // for loop
-    for(let i = 0; i <=9; i++) {
-      console.log('notify friends!', i)
-    }
-    
-    //Functions
+  text: 'I am learning js today',
+  likes: 5,
+  shares: 2,
+  retweets: 1
+
+}
+const tweet2 = {
+  text: 'I am learning js today',
+  likes: 8,
+  shares: 3,
+  retweets: 0
+
+}
+const tweets = [];
+tweets.push(tweet1);
+tweets.push(tweet2);
+tweets.length;
+tweets;
+
+//Dates
+const today = new Date();
+today.toString();
+today.toLocaleDateString();
+
+//If/Else
+
+if (today.getHours() == 16) {
+  console.log('class has ended!');
+
+} else {
+  console.log('class is in session!');
+}
+// for loop
+for (let i = 0; i <= 9; i++) {
+  console.log('notify friends!', i)
+}
+
+//Functions
 //Defining functions
 function login(username, password) {
   if (username == 'mickeymond' && password == '1234') {
     return 'user is logged in';
   } else {
-    return 'invalid username or password' ;
+    return 'invalid username or password';
   }
 }
 //invoking functions
-  login('mickeymond', '1234');
-  
+login('mickeymond', '1234');
+
 
 //Basic Arithmatic
 
@@ -98,14 +98,15 @@ function login(username, password) {
 2 == 2;
 3 !== 2;
 
+
 //Built in Math Functions
-Math.round(37/24);
-Math.floor(37/24);
+Math.round(37 / 24);
+Math.floor(37 / 24);
 Math.random();
-Math.ceil(37/24);
+Math.ceil(37 / 24);
 Math.max(12, 14, 89)
 //order of operations
-1 * 2 + 3 -4 / 2 % 2**2;
+1 * 2 + 3 - 4 / 2 % 2 ** 2;
 //handling user inputs
 1200 + Number('250');
 
@@ -136,7 +137,7 @@ String(2014);
 const participants = [];
 function addParticipant(email) {
   // Check if email was provided
-  if (!email) { 
+  if (!email) {
     return 'Email not provided';
   }
   // Check if email is valid
@@ -145,12 +146,12 @@ function addParticipant(email) {
   }
   // Add email to the participants;
   participants.push(email);
-    // Notify them via mail
+  // Notify them via mail
   // Return response
-    return 'participant is added!';
-  } 
-  
-  addParticipant('nuella1995@yahoo.com');
+  return 'participant is added!';
+}
+
+addParticipant('nuella1995@yahoo.com');
 
 // Arrays in Javascript
 const alphabets = ['A', 'B', 'C', 'D'];
@@ -167,27 +168,27 @@ const user = {
 }
 
 function fullname(user) {
-return {
-  ...user,
-  fullname:`${user.firstname} ${user.lastname}`
- }
+  return {
+    ...user,
+    fullname: `${user.firstname} ${user.lastname}`
+  }
 }
 
 fullname(user);
-         
-         
+
+
 //Array Map
 const users = [
-  {firstname: 'Linda', lastname: 'Parker'},
-  {firstname: 'Mark', lastname: 'Twaine'},
-  {firstname: 'Oliver', lastname: 'Queen'},
-  {firstname: 'Stephan', lastname: 'Grider'},
-  {firstname: 'Elon', lastname: 'Musk'}
+  { firstname: 'Linda', lastname: 'Parker' },
+  { firstname: 'Mark', lastname: 'Twaine' },
+  { firstname: 'Oliver', lastname: 'Queen' },
+  { firstname: 'Stephan', lastname: 'Grider' },
+  { firstname: 'Elon', lastname: 'Musk' }
 ]
 users.map('fullname')
 // map and return  squares of numbers
-function square(number)  {
-return number  ** 2;
+function square(number) {
+  return number ** 2;
 
 }
 const numbers = [0, 1, 2, 3, 4, 5]
@@ -198,21 +199,48 @@ function even(number) {
   return number % 2 === 0;
 }
 numbers.filter(even);
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+// Objects in Javascript
+
+// Write a function that takes a user with name and date of birth and returns true if their birthday is today else false
+
+const user = {
+  name: 'Martin King',
+  dateOfBirth: '1995-06-12'
+}
+
+function isBirthday(user) {
+  const today = new Date();
+  const birthDate = new Date(user.dateOfBirth);
+  if (today.getMonth() == birthDate.getMonth() && today.getDate() == birthDate.getDate()) {
+    return true
+  } else {
+    return false
+  }
+}
+isBirthday(user);
+//Write a function that takes a user with name and dateOfBirth and returns birthday with their if their birthday is today else return not your day
+function birthdayMessage(user) {
+  if (isBirthday(user)) {
+    return `Happy Birthday, ${user.name}!`;
+  } else {
+    return 'Not your day';
+  }
+}
+birthdayMessage(user);
+console.log(birthdayMessage(user));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
