@@ -231,6 +231,49 @@ birthdayMessage(user);
 console.log(birthdayMessage(user));
 
 
+// Defining Object
+// Bottle Class
+class Bottle {
+  constructor(color, shape, volume) {
+    this.color = color;
+    this.shape = shape;
+    this.volume = volume;
+   
+  }
+  // putting object methods in class element
+  getInfo() {
+    return `This is a ${this.color} ${this.shape} bottle with a capacity of ${this.volume}ml`;
+  }
+}
+
+
+class Car {}
+
+
+const bottle1 = new Bottle('black', 'circle', 300);
+bottle1.getInfo();
+const bottle2 = new Bottle('yellow', 'square', 100);
+bottle2.getInfo();
+
+
+bottle1 instanceof Car
+
+
+// Object Methods
+const bottle = {
+  color: `red`,
+  shape: `square`,
+  volume: `100`,
+  getInfo: function() {
+    return `This is a ${this.color} ${this.shape} bottle with a capacity of ${this.volume}ml`;
+  },
+}
+
+
+bottle.color;
+bottle.getInfo();
+// notes
+// anonymous function: a function without a name
 
 
 
